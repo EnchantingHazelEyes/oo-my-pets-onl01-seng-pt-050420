@@ -8,9 +8,8 @@ class Owner
     @name = name
     @species = "human"
     save
-    @dog = dog
+    @dog = []
     @cat = []
-  #  @pets = {:dog => [], :cat => []}
   end
 
   def say_species
