@@ -7,6 +7,7 @@ class Cat
     @owner = owner
     @name = name
     @mood = mood
+    owner.cats
   #  @@all << self
   save 
   end 
