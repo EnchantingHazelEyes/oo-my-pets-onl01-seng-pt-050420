@@ -3,14 +3,13 @@ class Owner
   attr_accessor :pets, :cat, :dog 
   attr_reader :species, :name
   @@owner = []
-  @@cat = []
 
   def initialize(name)
     @name = name
     @species = "human"
     save
     @dog = dog
-  #  @cat = []
+    @cat = []
   #  @pets = {:dog => [], :cat => []}
   end
 
@@ -39,7 +38,7 @@ class Owner
   end
   
   def cats 
-    @@cat
+    @cat
   end 
 
   def buy_dog(name)
