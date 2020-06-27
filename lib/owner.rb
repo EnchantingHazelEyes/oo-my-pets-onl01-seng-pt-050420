@@ -55,16 +55,12 @@ class Owner
     @dog << Dog.new(name, self)
   end
 
-  def walk_dogs
-    @dog.each do |dog|
-      dog.mood = "happy"
-    end
+   def walk_dogs
+   self.dogs.each {|dog| dog.mood = "happy"}
   end
 
   def feed_cats
-    @cat.each do |cat|
-      cat.mood = "happy"
-    end
+    self.cats.each {|cat| cat.mood = "happy"}
   end
   
   def sell_pets
