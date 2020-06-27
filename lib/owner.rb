@@ -1,6 +1,6 @@
 class Owner
   
-  attr_accessor :pets
+  attr_accessor :pets, :cat, :dog 
   attr_reader :species, :name
   @@owner = []
 
@@ -8,8 +8,8 @@ class Owner
     @name = name
     @species = "human"
     save
-    @dog = []
-    @cats = cats
+    @dog = dog
+    @cat = cat
   #  @pets = {:dog => [], :cat => []}
   end
 
